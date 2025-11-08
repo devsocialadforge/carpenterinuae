@@ -1,15 +1,24 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="@container">
       {/* Hero Image Section */}
-      <div
-        className="flex min-h-[400px] h-[70vh] max-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-start justify-end px-4 pb-16 @[480px]:px-10 text-left"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url('/images/hero.png')`,
-        }}
-      >
+      <div className="relative flex min-h-[400px] h-[70vh] max-h-[600px] flex-col gap-6 @[480px]:gap-8 items-start justify-end px-4 pb-16 @[480px]:px-10 text-left overflow-hidden">
+        {/* Next.js Image Component */}
+        <Image
+          src="/images/hero.png"
+          alt="Master Carpenter - Woodworking Craftsmanship"
+          fill
+          priority
+          quality={90}
+          className="object-cover object-center -z-10"
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/50 -z-5"></div>
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-4 max-w-2xl">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
