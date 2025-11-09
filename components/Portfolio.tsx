@@ -77,9 +77,9 @@ export default function PortfolioShowcase({ images }: PortfolioShowcaseProps) {
 
         {/* Middle Section - Image Gallery */}
         <div className="">
-          <div className="relative bg-transparent p-0 shadow-none rounded-none md:bg-white md:rounded-xl md:shadow-lg md:p-8 max-w-4xl mx-auto">
+          <div className="relative max-w-4xl mx-auto">
             {/* Image Container */}
-            <div className="relative aspect-16/10 mb-0 md:mb-6 rounded-none md:rounded-lg overflow-hidden ">
+            <div className="relative aspect-16/10 mb-0 md:mb-6 rounded-lg overflow-hidden ">
               {images.length > 0 && (
                 <Image
                   src={images[currentImageIndex].src}
