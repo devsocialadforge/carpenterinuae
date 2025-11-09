@@ -21,7 +21,7 @@ export default function Header() {
               </svg>
             </div>
             <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-              Goleden Carpentery
+              Goleden Carpentery in UAE
             </h2>
           </div>
 

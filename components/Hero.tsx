@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { AppWindow, Sofa, Layers, Wallpaper } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -49,80 +50,52 @@ export default function Hero() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Shelving Solutions */}
             <div className="group flex flex-col flex-1 gap-4 rounded-lg bg-cream dark:bg-[#2c2216] p-6 text-center items-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-              <div className="text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "32px" }}
-                >
-                  shelves
-                </span>
-              </div>
+              <AppWindow className="h-8 w-8 text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
               <div className="flex flex-col gap-1">
                 <h3 className="text-text-dark dark:text-white text-lg font-bold leading-tight group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-                  Shelving Solutions
+                  Curtains
                 </h3>
                 <p className="text-[#333333] dark:text-white/70 text-sm font-normal leading-normal group-hover:text-text-dark dark:group-hover:text-white transition-colors duration-300">
-                  Custom shelving for any space.
+                  Custom curtains for any window.
                 </p>
               </div>
             </div>
 
             {/* Trim Carpentry */}
             <div className="group flex flex-col flex-1 gap-4 rounded-lg bg-cream dark:bg-[#2c2216] p-6 text-center items-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-              <div className="text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "32px" }}
-                >
-                  square_foot
-                </span>
-              </div>
+              <Sofa className="h-8 w-8 text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
               <div className="flex flex-col gap-1">
                 <h3 className="text-text-dark dark:text-white text-lg font-bold leading-tight group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-                  Trim Carpentry
+                  Sofa Set
                 </h3>
                 <p className="text-[#333333] dark:text-white/70 text-sm font-normal leading-normal group-hover:text-text-dark dark:group-hover:text-white transition-colors duration-300">
-                  Precision trim and molding.
+                  Comfortable sofas designed for your home.
                 </p>
               </div>
             </div>
 
             {/* Frame Construction */}
             <div className="group flex flex-col flex-1 gap-4 rounded-lg bg-cream dark:bg-[#2c2216] p-6 text-center items-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-              <div className="text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "32px" }}
-                >
-                  carpenter
-                </span>
-              </div>
+              <Layers className="h-8 w-8 text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
               <div className="flex flex-col gap-1">
                 <h3 className="text-text-dark dark:text-white text-lg font-bold leading-tight group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-                  Frame Construction
+                  Gypsum Designs
                 </h3>
                 <p className="text-[#333333] dark:text-white/70 text-sm font-normal leading-normal group-hover:text-text-dark dark:group-hover:text-white transition-colors duration-300">
-                  Solid wood frame construction.
+                  Clean gypsum designs for walls and ceilings.
                 </p>
               </div>
             </div>
 
             {/* Wood Finishing */}
             <div className="group flex flex-col flex-1 gap-4 rounded-lg bg-cream dark:bg-[#2c2216] p-6 text-center items-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-              <div className="text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "32px" }}
-                >
-                  format_paint
-                </span>
-              </div>
+              <Wallpaper className="h-8 w-8 text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
               <div className="flex flex-col gap-1">
                 <h3 className="text-text-dark dark:text-white text-lg font-bold leading-tight group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-                  Wood Finishing
+                  Wallpaper
                 </h3>
                 <p className="text-[#333333] dark:text-white/70 text-sm font-normal leading-normal group-hover:text-text-dark dark:group-hover:text-white transition-colors duration-300">
-                  High-quality wood finishing.
+                  Stylish wallpapers for a modern look.
                 </p>
               </div>
             </div>

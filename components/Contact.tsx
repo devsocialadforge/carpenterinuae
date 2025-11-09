@@ -58,9 +58,6 @@ export default function Contact() {
             <div className="bg-cream dark:bg-[#3a3128] rounded-2xl shadow-xl p-6 lg:p-8 transform transition-all duration-300 hover:shadow-2xl">
               {/* Headline */}
               <div className="mb-6">
-                <h2 className="text-2xl lg:text-3xl font-black text-text-dark dark:text-white leading-tight mb-2">
-                  Have a suggestion?
-                </h2>
                 <h3 className="text-xl lg:text-2xl font-black text-brown dark:text-primary leading-tight">
                   Get in touch!
                 </h3>
