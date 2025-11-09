@@ -1,6 +1,10 @@
 "use client";
 
+import { useState } from "react";
+
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm">
       <div className="container mx-auto px-4">
@@ -17,7 +21,7 @@ export default function Header() {
               </svg>
             </div>
             <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] group-hover:text-brown dark:group-hover:text-primary transition-colors duration-300">
-              Carpenter Logo
+              Goleden Carpentery
             </h2>
           </div>
 
@@ -48,21 +52,43 @@ export default function Header() {
               Contact
             </a>
           </nav>
-
-          {/* WhatsApp Button */}
-          <div className="flex items-center justify-end">
-            <a 
-              href="https://wa.me/971543121715"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-brown text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 hover:shadow-lg hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 ease-in-out active:scale-95 animate-pulse hover:animate-none"
-            >
-              <span className="truncate group-hover:tracking-wide transition-all duration-300">
-                WhatsApp: +971 54 312 1715
-              </span>
-            </a>
-          </div>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMenuOpen && (
+          <nav className="md:hidden py-4 border-b border-border dark:border-white/10 animate-fadeIn">
+            <div className="flex flex-col space-y-3">
+              <a
+                className="px-4 py-2 text-sm font-medium text-text-dark dark:text-white hover:text-brown dark:hover:text-primary hover:bg-brown/5 dark:hover:bg-primary/5 rounded-lg transition-all duration-200"
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </a>
+              <a
+                className="px-4 py-2 text-sm font-medium text-text-dark dark:text-white hover:text-brown dark:hover:text-primary hover:bg-brown/5 dark:hover:bg-primary/5 rounded-lg transition-all duration-200"
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </a>
+              <a
+                className="px-4 py-2 text-sm font-medium text-text-dark dark:text-white hover:text-brown dark:hover:text-primary hover:bg-brown/5 dark:hover:bg-primary/5 rounded-lg transition-all duration-200"
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Portfolio
+              </a>
+              <a
+                className="px-4 py-2 text-sm font-medium text-text-dark dark:text-white hover:text-brown dark:hover:text-primary hover:bg-brown/5 dark:hover:bg-primary/5 rounded-lg transition-all duration-200"
+                href="#"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );

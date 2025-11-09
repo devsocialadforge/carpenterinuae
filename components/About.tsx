@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="mx-auto container px-4 py-16 space-y-16">
@@ -5,7 +7,16 @@ export default function About() {
       <div className="grid gap-8 md:grid-cols-2 items-start">
         {/* Left image with caption */}
         <div className="relative">
-          <div className="aspect-4/3 w-full rounded-2xl bg-neutral-200" />
+          <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl">
+            <Image
+              src="/images/about-1.jpeg"
+              alt="Custom carpentry team crafting premium furniture"
+              fill
+              sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+              priority
+            />
+          </div>
           <div className="absolute bottom-4 left-4 rounded-xl bg-black/80 px-4 py-3 text-white max-w-[70%]">
             <p className="text-sm font-medium">
               Crafted with passion and precision
@@ -23,21 +34,6 @@ export default function About() {
             We combine skilled craftsmanship with premium materials to deliver
             furniture that’s built to endure daily life in the UAE.
           </p>
-
-          <div className="mt-6 space-y-3">
-            <div className="flex items-start gap-3">
-              <span className="text-neutral-400 font-semibold">01</span>
-              <p className="font-medium">Custom furniture</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-neutral-400 font-semibold">02</span>
-              <p className="font-medium">Premium wood</p>
-            </div>
-          </div>
-
-          <button className="mt-6 inline-flex items-center rounded-xl bg-amber-600 px-4 py-2 text-white hover:bg-amber-700 transition">
-            Learn More
-          </button>
         </div>
       </div>
 
@@ -54,20 +50,30 @@ export default function About() {
             From design to installation, every detail is measured twice and
             finished to perfection for long-lasting results.
           </p>
-          <a
-            href="#"
-            className="mt-4 inline-block text-neutral-900 underline underline-offset-4"
-          >
-            Read More
-          </a>
         </div>
 
-        <div className="aspect-4/3 w-full rounded-2xl bg-neutral-200" />
+        <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/images/about-2.jpeg"
+            alt="Close-up of premium wooden cabinet details"
+            fill
+            sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
 
       {/* Bottom row */}
       <div className="grid gap-0 md:grid-cols-2 overflow-hidden rounded-2xl">
-        <div className="aspect-16/10 w-full bg-neutral-200" />
+        <div className="relative aspect-16/10 w-full overflow-hidden">
+          <Image
+            src="/images/about-3.jpeg"
+            alt="Finished bespoke wooden interior installation"
+            fill
+            sizes="(min-width: 1024px) 640px, 100vw"
+            className="object-cover"
+          />
+        </div>
         <div className="bg-neutral-900 p-8 text-white space-y-8">
           <div>
             <h4 className="text-lg font-semibold">Quality that lasts</h4>

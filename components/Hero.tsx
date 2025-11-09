@@ -21,18 +21,23 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/50 -z-5"></div>
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-4 max-w-2xl">
-            <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-              MASTER CARPENTER
+            <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+              Expert Custom Woodwork for Home & Office
             </h1>
-            <h2 className="text-white text-lg font-normal leading-normal @[480px]:text-xl @[480px]:font-normal @[480px]:leading-normal">
-              Where Wood Meets Craft
+            <h2 className="text-white text-lg hidden md:block font-normal leading-normal @[480px]:text-xl @[480px]:font-normal @[480px]:leading-normal">
+              High-quality craftsmanship, clean finishing, and quick delivery.
+              Serving all areas in Dubai & Abu Dhabi with guaranteed best
+              results.
             </h2>
             <div className="pt-4">
-              <button className="group flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-brown text-white text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg hover:bg-opacity-90 hover:shadow-2xl hover:scale-110 hover:-translate-y-1 transition-all duration-300 ease-in-out active:scale-95">
+              <a
+                href="#contact"
+                className="group flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-brown text-white text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg hover:bg-opacity-90 hover:shadow-2xl hover:scale-110 hover:-translate-y-1 transition-all duration-300 ease-in-out active:scale-95"
+              >
                 <span className="truncate group-hover:tracking-wider transition-all duration-300">
                   Get Free Quote
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -41,7 +46,7 @@ export default function Hero() {
       {/* Services Cards Section */}
       <div className="bg-beige dark:bg-background-dark py-4">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Shelving Solutions */}
             <div className="group flex flex-col flex-1 gap-4 rounded-lg bg-cream dark:bg-[#2c2216] p-6 text-center items-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
               <div className="text-[#333333] dark:text-primary transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">

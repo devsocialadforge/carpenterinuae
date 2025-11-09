@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -10,7 +11,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Master Carpenter | Premium Carpentry Services in UAE",
-  description: "Professional carpentry services in UAE. Custom furniture, shelving solutions, trim work, framing, and wood finishing by expert craftsmen. Where Wood Meets Craft.",
+  description:
+    "Professional carpentry services in UAE. Custom furniture, shelving solutions, trim work, framing, and wood finishing by expert craftsmen. Where Wood Meets Craft.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +31,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${manrope.variable} font-[family-name:var(--font-manrope)] bg-white dark:bg-background-dark text-text-dark dark:text-background-light`}>
+      <body
+        className={`${manrope.variable} font-[family-name:var(--font-manrope)] bg-white dark:bg-background-dark text-text-dark dark:text-background-light`}
+      >
+        <FloatingWhatsApp />
         {children}
       </body>
     </html>
