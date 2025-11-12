@@ -58,7 +58,7 @@ export default function PortfolioShowcase({ images }: PortfolioShowcaseProps) {
   };
 
   return (
-    <section className=" py-16 px-4 sm:px-6 lg:px-8 text-white">
+    <section id="portfolio" className=" py-5 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Top Section - How I Work */}
         <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
