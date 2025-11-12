@@ -58,10 +58,10 @@ export default function PortfolioShowcase({ images }: PortfolioShowcaseProps) {
   };
 
   return (
-    <section id="portfolio" className=" py-5 px-4 sm:px-6 lg:px-8 text-white">
+    <section id="portfolio" className=" py-2 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Top Section - How I Work */}
-        <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="mb-4 md:mb-16 grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-8 lg:gap-12">
           {/* Left: Heading and Subtext */}
           <div className="">
             <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
