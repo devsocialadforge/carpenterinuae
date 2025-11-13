@@ -5,7 +5,7 @@ import { AppWindow, Sofa, Layers, Wallpaper } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="@container">
+    <section id="home" className="@container">
       {/* Hero Image Section */}
       <div className="relative flex min-h-[400px] h-[70vh] max-h-[600px] flex-col gap-6 @[480px]:gap-8 items-start justify-end px-4 pb-16 @[480px]:px-10 text-left overflow-hidden">
         {/* Next.js Image Component */}
@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/50 -z-5"></div>
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-4 max-w-2xl">
-            <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+            <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
               Expert Custom Woodwork for Home & Office
             </h1>
             <h2 className="text-white text-lg hidden md:block font-normal leading-normal @[480px]:text-xl @[480px]:font-normal @[480px]:leading-normal">
@@ -45,7 +45,9 @@ export default function Hero() {
       </div>
 
       {/* Services Cards Section */}
+< div id="services">
       <div className="bg-black py-4">
+
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Shelving Solutions */}
@@ -101,6 +103,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

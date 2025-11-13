@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section id="contact" className="w-full relative">
       {/* Main Contact Section */}
-      <div className="container mx-auto px-4 py-12 lg:py-16">
+      <div className="container mx-auto px-4 py-4 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
           {/* Left Side - Image */}
           <div className="relative hidden md:block h-[350px] lg:h-[480px] rounded-2xl overflow-hidden shadow-xl group">
