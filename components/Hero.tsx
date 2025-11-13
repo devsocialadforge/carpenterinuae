@@ -45,7 +45,7 @@ export default function Hero() {
       </div>
 
       {/* Services Cards Section */}
-      <div className="bg-beige dark:bg-background-dark py-4">
+      <div className="bg-black py-4">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Shelving Solutions */}

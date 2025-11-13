@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="mx-auto container px-4 py-16 space-y-16">
+    <section className="mx-auto container px-4 py-6 space-y-16">
       {/* Top row */}
       <div className="grid gap-8 md:grid-cols-2 items-start">
         {/* Left image with caption */}

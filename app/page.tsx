@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relativeflex min-h-screen w-full flex-col">
+    <div className="relativeflex min-h-screen  w-full flex-col">
       <Header />
       <main className="grow">
         <Hero />

@@ -58,16 +58,16 @@ export default function PortfolioShowcase({ images }: PortfolioShowcaseProps) {
   };
 
   return (
-    <section className=" py-16 px-4 sm:px-6 lg:px-8 text-white">
+    <section className=" pt-6 md:pt-10 pb-4 px-4 sm:px-6 lg:px-8  text-black ">
       <div className="max-w-7xl mx-auto">
         {/* Top Section - How I Work */}
         <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left: Heading and Subtext */}
           <div className="">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-black leading-tight">
               How I Work on a Project
             </h2>
-            <p className="text-lg hidden md:block text-amber-100 leading-relaxed">
+            <p className="text-lg hidden md:block text-black leading-relaxed">
               Every project is a journey of craftsmanship and dedication. Here's
               my proven process to bring your vision to life with precision and
               care.
@@ -134,7 +134,7 @@ export default function PortfolioShowcase({ images }: PortfolioShowcaseProps) {
 
             {/* Caption */}
             {images.length > 0 && (
-              <p className="text-center text-amber-100 font-medium mb-4">
+              <p className="text-center text-black font-medium mb-4">
                 {images[currentImageIndex].caption}
               </p>
             )}
