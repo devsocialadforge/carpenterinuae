@@ -9,6 +9,9 @@ const manrope = Manrope({
   weight: ["400", "700", "800"],
 });
 
+// Get base URL from environment or use default
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com';
+
 export const metadata: Metadata = {
   title: "Master Carpenter | Premium Carpentry Services in UAE",
   description:
@@ -16,6 +19,31 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  openGraph: {
+    title: "Master Carpenter | Premium Carpentry Services in UAE",
+    description:
+      "Professional carpentry services in UAE. Custom furniture, shelving solutions, trim work, framing, and wood finishing by expert craftsmen. Where Wood Meets Craft.",
+    url: baseUrl,
+    siteName: "Master Carpenter UAE",
+    images: [
+      {
+        url: `${baseUrl}/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Master Carpenter - Premium Carpentry Services in UAE",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Master Carpenter | Premium Carpentry Services in UAE",
+    description:
+      "Professional carpentry services in UAE. Custom furniture, shelving solutions, trim work, framing, and wood finishing by expert craftsmen.",
+    images: [`${baseUrl}/opengraph-image.png`],
+  },
+  metadataBase: new URL(baseUrl),
 };
 
 export default function RootLayout({
