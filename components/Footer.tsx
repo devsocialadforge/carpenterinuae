@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-beige dark:bg-background-dark py-4">
-      <div className="border-t border-[#3a3128] bg-[#1f1b18]">
+      <div className="border-t border-gray-800 bg-gray-900">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Tagline Block */}
@@ -60,7 +60,7 @@ export default function Footer() {
               <div className="flex items-center justify-center md:justify-start gap-2.5 mt-3">
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#3a3128] flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
+                  className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
                   aria-label="Facebook"
                 >
                   <svg
@@ -73,7 +73,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#3a3128] flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
+                  className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
                   aria-label="Instagram"
                 >
                   <svg
@@ -88,7 +88,7 @@ export default function Footer() {
                   href="https://wa.me/971543121715"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-[#3a3128] flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
+                  className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-200"
                   aria-label="WhatsApp"
                 >
                   <svg
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="mt-6 pt-6 border-t border-[#3a3128] text-center">
+          <div className="mt-6 pt-6 border-t border-gray-800 text-center">
             <p className="text-white/50 text-xs">
               © {new Date().getFullYear()} Golden Carpentry UAE. All rights
               reserved.
